@@ -1,7 +1,7 @@
 @import 'normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,100&display=swap');
 
-:root{
+:root {
     --primary: #fe2c55;
 
     // Default layout
@@ -17,18 +17,20 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
-body{
-    // font-family: 'Montserrat', sans-serif;  
+body {
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
 }
 
-button, input, [tabindex] {
+button,
+input,
+[tabindex] {
     outline: none;
     border: none;
 }

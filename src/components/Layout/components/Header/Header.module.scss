@@ -1,7 +1,7 @@
 .wrapper {
     --search-boder-radius: 92px;
     --search-height: 46px;
-    --search-top-spacer: 9px; 
+    --search-top-spacer: 9px;
     --search-btn-width: 60px;
 
     width: 100%;
@@ -11,7 +11,7 @@
     justify-content: center;
 }
 
-.inner{
+.inner {
     height: 100%;
     width: var(--default-layout-width);
     display: flex;
@@ -19,17 +19,16 @@
     justify-content: space-between;
 }
 
-
-.logo{
-    
+.search,
+.search-result {
+    width: 361px;
 }
 
-.search{
+.search {
     position: relative;
-    width: 361px;
     height: var(--search-height);
     padding-left: 16px;
-    background: rgba(22, 24, 35, .06);
+    background: rgba(22, 24, 35, 0.06);
     border-radius: var(--search-boder-radius);
     border: 1.5px solid transparent;
     display: flex;
@@ -45,8 +44,8 @@
         caret-color: var(--primary);
     }
 
-    input:not(:placeholder-shown) ~ .search-btn{
-        color:  rgba(22, 24, 35, 0.75);
+    input:not(:placeholder-shown) ~ .search-btn {
+        color: rgba(22, 24, 35, 0.75);
     }
 
     &::after {
@@ -55,17 +54,24 @@
         top: var(--search-top-spacer);
         right: var(--search-btn-width);
         width: 1px;
-        height: calc(var(--search-height) - var(--search-top-spacer)*2  );
+        height: calc(var(--search-height) - var(--search-top-spacer) * 2);
         background-color: rgba(22, 24, 35, 0.12);
     }
 
     &:focus-within {
-        border-color: rgba(22, 24, 35, .2);
+        border-color: rgba(22, 24, 35, 0.2);
     }
 }
 
+.search-title {
+    padding: 5px 12px;
+    font-style: 1.4rem;
+    font-weight: 600;
+    color: rgba(22, 24, 35, 0.5);
+}
+
 .clear,
-.loading{
+.loading {
     position: absolute;
     right: calc(var(--search-btn-width) + 16px);
     top: 50%;
@@ -74,7 +80,7 @@
     cursor: pointer;
 }
 
-.search-btn{
+.search-btn {
     width: var(--search-btn-width);
     height: 100%;
     border-top-right-radius: var(--search-boder-radius);
@@ -83,7 +89,7 @@
     color: rgba(22, 24, 35, 0.34);
 
     &:hover {
-        background: rgba(22, 24, 35, .03);
+        background: rgba(22, 24, 35, 0.03);
         cursor: pointer;
     }
 
